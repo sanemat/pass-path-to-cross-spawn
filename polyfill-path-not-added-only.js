@@ -1,4 +1,4 @@
-var spawnSync = require('child_process').spawnSync;
+var spawnSync = require('spawn-sync');
 var path = require('path');
 
 var result;

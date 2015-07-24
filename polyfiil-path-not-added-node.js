@@ -1,11 +1,11 @@
-var spawnSync = require('child_process').spawnSync;
+var spawnSync = require('spawn-sync');
 var path = require('path');
 
 var result;
 var opts = {
   stdio: 'inherit'
 };
-var command = [path.join('fixtures', 'bin', 'example.js'), [], opts];
+var command = ['node', [path.join('fixtures', 'bin', 'example.js')], opts];
 
 try {
   result = spawnSync.apply(null, command);

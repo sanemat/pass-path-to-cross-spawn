@@ -6,11 +6,12 @@
 
 | script |appveyor(node v0.12)|travis-ci(node v0.10)|travis-ci(node v0.12)|travis-ci(iojs)|
 |:-----------|:-----------:|:------------:|:-----------:|:------------:|
-| shebang:node | o | o | o | o |
-| shebang:only | x | o | o | o |
-| native:notadded:node | o | x(>= v0.12)| o | o |
-| native:notadded:only |  | x(>= v0.12)| o | o |
-
+| shebang:node          | o | o | o | o |
+| shebang:only          | x | o | o | o |
+| native:notadded:node  | o | x(>= v0.12)| o | o |
+| native:notadded:only  | x | x(>= v0.12)| o | o |
+| polyfill:notadded:node|||||
+| polyfill:notadded:only|||||
 
 * shebang:node
     * `node fixtures/bin/example.js`
