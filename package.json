@@ -30,8 +30,8 @@
     "native-notadded-only": "node ./lib/native-path-not-added-only.js",
     "polyfill-notadded-node": "node ./lib/polyfill-path-not-added-node.js",
     "polyfill-notadded-only": "node ./lib/polyfill-path-not-added-only.js",
-    "shebang-node": "node ./lib/fixtures/bin/example.js",
-    "shebang-only": "./lib/fixtures/bin/example.js",
+    "shebang-node": "node ./fixtures/bin/example.js",
+    "shebang-only": "./fixtures/bin/example.js",
     "run-windows": "npm run %RUN_SCRIPT% && mocha -- ./test.js",
     "run-linux": "npm run $RUN_SCRIPT && mocha -- ./test.js",
     "test": "npm run polyfill-notadded-only && mocha -- ./test.js"
