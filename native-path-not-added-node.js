@@ -9,9 +9,16 @@ var command = ['node', [path.join('fixtures', 'bin', 'example.js')], opts];
 
 try {
   result = spawnSync.apply(null, command);
-  console.log('error: ' + result.error);
-  console.log('status: ' + result.status);
 } catch (e) {
   console.error(e);
+  process.exit(1);
+}
+console.log('error: ' + result.error);
+console.log('status: ' + result.status);
+if (result.error) {
+  console.error(result.error);
+  process.exit(1);
+} else if (result.status !== 0) {
+  console.error(result.status);
   process.exit(1);
 }
