@@ -11,7 +11,7 @@ env:
   - RUN_SCRIPT=polyfill-notadded-only
   - RUN_SCRIPT=cross-notadded-node
   - RUN_SCRIPT=cross-notadded-only
-  - RUN_SCRIPT=cross-notadded-node-parent
+  - RUN_SCRIPT=cross-notadded-node-cwd-child
   - RUN_SCRIPT=shebang-node
   - RUN_SCRIPT=shebang-only
 script: "npm run run-linux"
