@@ -10,7 +10,7 @@
 | shebang:only          | x | o | o | o |
 | native:notadded:node  | o | x(>= v0.12)| o | o |
 | native:notadded:only  | x | x(>= v0.12)| o | o |
-| polyfill:notadded:node|||||
+| polyfill:notadded:node| o | o | o | o |
 | polyfill:notadded:only|||||
 
 * shebang:node
@@ -21,6 +21,10 @@
     * native SpawnSync, PATH=PATH `spawnSync('node', [path.join('fixtures', 'bin', 'example.js'), {stdio: 'inherit'}])`
 * native:notadded:only
     * native SpawnSync, PATH=PATH `spawnSync(path.join('fixtures', 'bin', 'example.js'), [], {stdio: 'inherit'}])`
+* polyfill:notadded:node
+    * spawn-sync, PATH=PATH `spawnSync('node', [path.join('fixtures', 'bin', 'example.js'), {stdio: 'inherit'}])`
+* polyfill:notadded:only
+    * spawn-sync, PATH=PATH `spawnSync(path.join('fixtures', 'bin', 'example.js'), [], {stdio: 'inherit'}])`
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
 [travis-image]: https://img.shields.io/travis/sanemat/pass-path-to-cross-spawn/master.svg?style=flat-square&label=travis
