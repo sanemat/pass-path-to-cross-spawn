@@ -27,6 +27,7 @@
   "repository": "sanemat/pass-path-to-cross-spawn",
   "scripts": {
     "cross-notadded-node": "node ./lib/cross-path-not-added-node.js",
+    "cross-notadded-node-parent": "node ./lib/cross-path-not-added-node-parent.js",
     "cross-notadded-only": "node ./lib/cross-path-not-added-only.js",
     "native-notadded-node": "node ./lib/native-path-not-added-node.js",
     "native-notadded-only": "node ./lib/native-path-not-added-only.js",
