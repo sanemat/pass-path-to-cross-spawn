@@ -8,7 +8,7 @@
 |:-----------|:-----------:|:------------:|:-----------:|:------------:|
 | shebang:both | o | o | o | o |
 | shebang:only | x | o | o | o |
-
+| native:notadded:node | o | x(>= v0.12)| o | o |
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
 [travis-image]: https://img.shields.io/travis/sanemat/pass-path-to-cross-spawn/master.svg?style=flat-square&label=travis
