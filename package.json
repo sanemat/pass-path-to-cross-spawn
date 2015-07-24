@@ -29,6 +29,6 @@
     "native:notadded:only": "node ./native-path-not-added-only.js",
     "shebang:node": "node fixtures/bin/example.js",
     "shebang:only": "fixtures/bin/example.js",
-    "test": "native:notadded:only && mocha -- ./test.js"
+    "test": "npm run native:notadded:only && mocha -- ./test.js"
   }
 }
