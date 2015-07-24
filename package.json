@@ -25,6 +25,6 @@
   "license": "MIT",
   "repository": "sanemat/pass-path-to-cross-spawn",
   "scripts": {
-    "test": "fixtures/bin/example.js && mocha -- ./test.js"
+    "test": "./fixtures/bin/example.js && mocha -- ./test.js"
   }
 }
