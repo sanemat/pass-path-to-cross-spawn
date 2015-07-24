@@ -7,7 +7,9 @@
     "email": "o.gata.ken@gmail.com",
     "url": "sane.jp"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cross-spawn": "^2.0.0"
+  },
   "devDependencies": {
     "conventional-changelog": "*",
     "david": "*",
