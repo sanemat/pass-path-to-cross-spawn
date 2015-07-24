@@ -1,5 +1,5 @@
 'use strict';
-var assert = require('power-assert');
+var assert = require('assert');
 var passPathToCrossSpawn = require('./');
 
 it('should ', function () {
