@@ -7,6 +7,11 @@ var opts = {
 };
 var command = ['node', [path.join('fixtures', 'bin', 'example.js')], opts];
 
-result = spawnSync.apply(null, command);
-console.log('error: ' + result.error);
-console.log('status: ' + result.status);
+try {
+  result = spawnSync.apply(null, command);
+  console.log('error: ' + result.error);
+  console.log('status: ' + result.status);
+} catch (e) {
+  console.error(e);
+  process.exit(1);
+}
