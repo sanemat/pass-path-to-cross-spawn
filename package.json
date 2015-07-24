@@ -26,8 +26,9 @@
   "repository": "sanemat/pass-path-to-cross-spawn",
   "scripts": {
     "native:notadded:node": "node ./native-path-not-added-node.js",
-    "shebang:both": "node fixtures/bin/example.js",
+    "native:notadded:only": "node ./native-path-not-added-only.js",
+    "shebang:node": "node fixtures/bin/example.js",
     "shebang:only": "fixtures/bin/example.js",
-    "test": "npm run native:notadded:node && mocha -- ./test.js"
+    "test": "native:notadded:only && mocha -- ./test.js"
   }
 }

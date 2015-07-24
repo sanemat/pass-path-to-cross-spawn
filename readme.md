@@ -6,9 +6,19 @@
 
 | script |appveyor(node v0.12)|travis-ci(node v0.10)|travis-ci(node v0.12)|travis-ci(iojs)|
 |:-----------|:-----------:|:------------:|:-----------:|:------------:|
-| shebang:both | o | o | o | o |
+| shebang:node | o | o | o | o |
 | shebang:only | x | o | o | o |
 | native:notadded:node | o | x(>= v0.12)| o | o |
+
+
+* shebang:node
+    * `node fixtures/bin/example.js`
+* shebang:only
+    * `fixtures/bin/example.js`
+* native:notadded:node
+    * native SpawnSync, PATH=PATH `spawnSync('node', [path.join('fixtures', 'bin', 'example.js'), {stdio: 'inherit'}])`
+* native:notadded:only
+    * native SpawnSync, PATH=PATH `spawnSync(path.join('fixtures', 'bin', 'example.js'), [], {stdio: 'inherit'}])`
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
 [travis-image]: https://img.shields.io/travis/sanemat/pass-path-to-cross-spawn/master.svg?style=flat-square&label=travis
