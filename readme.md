@@ -4,54 +4,10 @@
 
 > My spectacular module
 
-
-## Install
-
-```
-$ npm install --save pass-path-to-cross-spawn
-```
-
-
-## Usage
-
-```js
-var passPathToCrossSpawn = require('pass-path-to-cross-spawn');
-
-passPathToCrossSpawn('unicorns');
-//=> unicorns & rainbows
-```
-
-
-
-## API
-
-### passPathToCrossSpawn(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
-
-## Changelog
-
-[changelog.md](./changelog.md).
-
-
-## License
-
-MIT © [sanemat](http://sane.jp)
+| script | appveyor | travis-ci |
+|:-----------|:-----------:|:------------:|
+| shebang:both |  o |     o     |
+| shebang:only     |   x |    o    |
 
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
