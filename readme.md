@@ -6,24 +6,24 @@
 
 | script |appveyor(node v0.12)|travis-ci(node v0.10)|travis-ci(node v0.12)|travis-ci(iojs)|
 |:-----------|:-----------:|:------------:|:-----------:|:------------:|
-| shebang:node          | o | o | o | o |
-| shebang:only          | x | o | o | o |
-| native:notadded:node  | o | x(>= v0.12)| o | o |
-| native:notadded:only  | x | x(>= v0.12)| o | o |
-| polyfill:notadded:node| o | o | o | o |
-| polyfill:notadded:only|||||
+| shebang_node          | o | o | o | o |
+| shebang_only          | x | o | o | o |
+| native_notadded_node  | o | x(>= v0.12)| o | o |
+| native_notadded_only  | x | x(>= v0.12)| o | o |
+| polyfill_notadded_node| o | o | o | o |
+| polyfill_notadded_only|||||
 
-* shebang:node
+* shebang_node
     * `node fixtures/bin/example.js`
-* shebang:only
+* shebang_only
     * `fixtures/bin/example.js`
-* native:notadded:node
+* native_notadded_node
     * native SpawnSync, PATH=PATH `spawnSync('node', [path.join('fixtures', 'bin', 'example.js'), {stdio: 'inherit'}])`
-* native:notadded:only
+* native_notadded_only
     * native SpawnSync, PATH=PATH `spawnSync(path.join('fixtures', 'bin', 'example.js'), [], {stdio: 'inherit'}])`
-* polyfill:notadded:node
+* polyfill_notadded_node
     * spawn-sync, PATH=PATH `spawnSync('node', [path.join('fixtures', 'bin', 'example.js'), {stdio: 'inherit'}])`
-* polyfill:notadded:only
+* polyfill_notadded_only
     * spawn-sync, PATH=PATH `spawnSync(path.join('fixtures', 'bin', 'example.js'), [], {stdio: 'inherit'}])`
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
