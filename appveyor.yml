@@ -3,6 +3,15 @@
 # init
 clone_depth: 20
 
+environment:
+  matrix:
+  - RUN_SCRIPT: native-notadded-node
+  - RUN_SCRIPT: native-notadded-only
+  - RUN_SCRIPT: polyfill-notadded-node
+  - RUN_SCRIPT: polyfill-notadded-only
+  - RUN_SCRIPT: shebang-node
+  - RUN_SCRIPT: shebang-only
+
 # install
 install:
 - node --version
@@ -14,7 +23,7 @@ build: off
 
 # test
 test_script:
-- npm test
+- npm run run-windows
 
 # deploy
 deploy: off
