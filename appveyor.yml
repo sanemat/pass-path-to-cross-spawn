@@ -9,6 +9,8 @@ environment:
   - RUN_SCRIPT: native-notadded-only
   - RUN_SCRIPT: polyfill-notadded-node
   - RUN_SCRIPT: polyfill-notadded-only
+  - RUN_SCRIPT: cross-notadded-node
+  - RUN_SCRIPT: cross-notadded-only
   - RUN_SCRIPT: shebang-node
   - RUN_SCRIPT: shebang-only
 
