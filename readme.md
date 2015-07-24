@@ -4,10 +4,10 @@
 
 > My spectacular module
 
-| script | appveyor | travis-ci |
-|:-----------|:-----------:|:------------:|
-| shebang:both |  o |     o     |
-| shebang:only     |   x |    o    |
+| script |appveyor(node v0.12)|travis-ci(node v0.10)|travis-ci(node v0.12)|travis-ci(iojs)|
+|:-----------|:-----------:|:------------:|:-----------:|:------------:|
+| shebang:both | o | o | o | o |
+| shebang:only | x | o | o | o |
 
 
 [travis-url]: https://travis-ci.org/sanemat/pass-path-to-cross-spawn
