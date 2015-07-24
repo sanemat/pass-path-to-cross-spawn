@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": "sanemat/pass-path-to-cross-spawn",
   "scripts": {
-    "native-notadded-node": "node ./native-path-not-added-node.js",
-    "native-notadded-only": "node ./native-path-not-added-only.js",
-    "polyfill-notadded-node": "node ./polyfill-path-not-added-node.js",
-    "polyfill-notadded-only": "node ./polyfill-path-not-added-only.js",
-    "shebang-node": "node fixtures/bin/example.js",
-    "shebang-only": "fixtures/bin/example.js",
-    "test": "npm run polyfill:notadded:only && mocha -- ./test.js"
+    "native-notadded-node": "node ./lib/native-path-not-added-node.js",
+    "native-notadded-only": "node ./lib/native-path-not-added-only.js",
+    "polyfill-notadded-node": "node ./lib/polyfill-path-not-added-node.js",
+    "polyfill-notadded-only": "node ./lib/polyfill-path-not-added-only.js",
+    "shebang-node": "node ./lib/fixtures/bin/example.js",
+    "shebang-only": "./lib/fixtures/bin/example.js",
+    "test": "npm run polyfill-notadded-only && mocha -- ./test.js"
   }
 }
