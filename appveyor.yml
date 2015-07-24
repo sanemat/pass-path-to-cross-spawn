@@ -14,7 +14,7 @@ build: off
 
 # test
 test_script:
-- npm run verify
+- npm test
 
 # deploy
 deploy: off

@@ -11,16 +11,7 @@
     "cross-spawn": "^2.0.0"
   },
   "devDependencies": {
-    "conventional-changelog": "*",
-    "david": "*",
-    "eclint": "*",
-    "eslint": "^1.0.0-rc",
-    "espower-loader": "*",
-    "fixpack": "*",
-    "globstar": "*",
-    "mocha": "*",
-    "power-assert": "*",
-    "touch": "*"
+    "mocha": "*"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -34,14 +25,6 @@
   "license": "MIT",
   "repository": "sanemat/pass-path-to-cross-spawn",
   "scripts": {
-    "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "david": "david update",
-    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint .",
-    "fixpack": "fixpack",
-    "git:tag": "git tag v${npm_package_version}",
-    "lint": "npm run eclint && npm run eslint",
-    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
-    "verify": "npm run lint && npm run test"
+    "test": "mocha -- ./test.js",
   }
 }
