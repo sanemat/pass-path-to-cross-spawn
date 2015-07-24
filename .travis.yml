@@ -4,4 +4,11 @@ node_js:
   - 'iojs'
   - '0.12'
   - '0.10'
-script: "npm test"
+env:
+  - RUN_SCRIPT=native-notadded-node
+  - RUN_SCRIPT=native-notadded-only
+  - RUN_SCRIPT=polyfill-notadded-node
+  - RUN_SCRIPT=polyfill-notadded-only
+  - RUN_SCRIPT=shebang-node
+  - RUN_SCRIPT=shebang-only
+script: "npm run run-linux"
